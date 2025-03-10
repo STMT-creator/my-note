@@ -21,6 +21,9 @@ function Body({ onCreate }) {
           e.preventDefault();
           const titleInput = title.trim() === '' ? `임시 제목 ${count}` : title;
           const bodyInput = body.trim() === '' ? `임시 본문 ${count}` : body;
+          // gpt 추천 : trim() 은 공백을 제거하고 남는것을 물어봄
+          // title.trim()은 title을 공백을 제거하고 봣을때 
+          // 공백(빈 값)이면 임시 제목을, 외에는 title 값을 그대로 입력한다
           const countInput = count;
           onCreate(titleInput, bodyInput, countInput);
           setTitle('');
