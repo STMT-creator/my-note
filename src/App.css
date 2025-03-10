@@ -23,7 +23,7 @@ h3 {
 
 
 /* common */
-.memo-container {
+.note-container {
   max-width: 400px;
   height: auto;
   overflow: hidden;
@@ -79,42 +79,44 @@ h3 {
 .header-title {
   text-transform: capitalize;
 }
-.memo-create {
+.note-create {
   width: 100px;
   text-align: center;
   margin: .5rem auto;
   font-size: .8rem;
 }
-.memo-del {
+.note-del {
   width: 100px;
   justify-content: end;
   margin: .5rem auto;
   font-size: .8rem;
 }
-.memos-area {
-  max-width: 100%;
+.notes-area {
+  max-width: 80%;
   flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
 }
-.memo-box {
+.note-box {
   width: 250px;
   height: 300px;
   text-indent: .5rem;
   border: 1px solid white;
   border-radius: .75rem;
-  margin: .5rem;
+  margin: 1rem;
   overflow: hidden;
 }
-.memo-title {
+.note-title {
   border-bottom: 1px solid beige;
   padding: .5rem;
   overflow: hidden;
 }
-.memo-title h3 {
+.note-title h3 {
   max-width: 190px;
   max-height: 35px;
   overflow: hidden;
 }
-.memo-body {
+.note-body {
   text-indent: .5rem;
   overflow-wrap: break-word;
   padding: .5rem;
