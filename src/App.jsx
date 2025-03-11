@@ -52,10 +52,7 @@ function Body({ onCreate }) {
             value={body}
             onChange={e => setBody(e.target.value)}
           ></textarea>
-          <div className="d-flex gap-1 justify-end">
-            <button type="button" className="note-del">
-              취소
-            </button>
+          <div className="text-end">
             <button type="submit" className="note-create">
               기록
             </button>
