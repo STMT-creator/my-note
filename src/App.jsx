@@ -61,7 +61,7 @@ function Body({ onCreate, notes }) {
     </>
   );
 }
-function Footer({ notes, onDelNote }) {
+function Footer({ notes, onDelNote, onEditNote }) {
   // console.log(notes);
   return (
     <>
@@ -96,9 +96,6 @@ function Footer({ notes, onDelNote }) {
     </>
   );
 }
-function onEditNote(note) {
-  console.log(note);
-}
 function App() {
   const [notes, setNotes] = useState([]);
   const [id, setId] = useState(1);
@@ -111,11 +108,14 @@ function App() {
   function onDelNote(id) {
     setNotes(notes.filter(note => note.id !== id))
   }
+  function onEditNote(note) {
+    console.log(note);
+  }
   return (
     <>
       <Header />
       <Body notes={notes} onCreate={onCreate} />
-      <Footer notes={notes} onDelNote={onDelNote} />
+      <Footer notes={notes} onDelNote={onDelNote} onEditNote={onEditNote} />
     </>
   );
 }
