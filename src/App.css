@@ -84,6 +84,7 @@ h3 {
   text-align: center;
   margin: .5rem auto;
   font-size: .8rem;
+  background-color: #888;
 }
 .note-del {
   width: 100px;
@@ -104,12 +105,10 @@ h3 {
   border: 1px solid white;
   border-radius: .75rem;
   margin: 1rem;
-  overflow: hidden;
 }
 .note-title {
   border-bottom: 1px solid beige;
   padding: .5rem;
-  overflow: hidden;
 }
 .note-title h3 {
   max-width: 190px;
@@ -119,7 +118,12 @@ h3 {
 .note-body {
   text-indent: .5rem;
   overflow-wrap: break-word;
-  padding: .5rem;
+  padding: 0 .5rem;
+  height: 11rem;
+  overflow: hidden;
+}
+.note-body p {
+  margin: 0;
 }
 .edit-title-icon {
   background-color: white;
@@ -134,7 +138,15 @@ h3 {
   height: 30px;
   cursor: pointer;
   right: 5%;
-  top: 20%;
+  bottom: 2%;
+}
+.delete-note-icon {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  right: 20%;
+  bottom: 2%;
 }
 
 

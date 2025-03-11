@@ -63,7 +63,7 @@ function Body({ onCreate }) {
   );
 }
 function Footer({ notes }) {
-  console.log(notes);
+  // console.log(notes);
   return (
     <>
       <ul className="notes-area d-flex">
@@ -85,6 +85,11 @@ function Footer({ notes }) {
                 src="../images/edit-icon.png"
                 alt="edit-icon"
                 className="edit-body-icon posi-absolute"
+              />
+              <img
+                src="../images/delete-note-icon.png"
+                alt="del-icon"
+                className="delete-note-icon posi-absolute"
               />
             </li>
           );
