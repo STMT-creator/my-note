@@ -3,18 +3,24 @@
   margin: 0 auto;
   padding: 0;
 }
+
 html {
   font-size: 20px;
 }
+
 fieldset {
   border: none;
 }
+
 legend {
   display: none;
 }
-ul, ol {
+
+ul,
+ol {
   list-style: none;
 }
+
 h3 {
   margin: 0;
 }
@@ -23,52 +29,60 @@ h3 {
 
 
 /* common */
-.note-container {
-  max-width: 400px;
-  height: auto;
-  overflow: hidden;
-}
 .d-flex {
   display: flex;
 }
+
 .gap-1 {
   gap: 1rem;
 }
+
 .text-center {
   text-align: center;
 }
+
 .text-end {
   text-align: end;
 }
+
 .items-center {
   align-items: center;
 }
+
 .flex-column {
   flex-direction: column;
 }
+
 .mx-auto {
   margin: 0 auto;
 }
+
 .my-1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
 .p-1 {
   padding: 1rem;
 }
+
 .py-1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
 .justify-end {
   justify-content: end;
 }
+
 .justify-between {
   justify-content: space-between;
 }
+
 .posi-relative {
   position: relative;
 }
+
 .posi-absolute {
   position: absolute;
 }
@@ -79,6 +93,17 @@ h3 {
 .header-title {
   text-transform: capitalize;
 }
+
+.note-container {
+  max-width: 400px;
+  height: auto;
+  overflow: hidden;
+}
+
+.note-container textarea {
+  max-width: '400px'
+}
+
 .note-create {
   width: 100px;
   text-align: center;
@@ -86,18 +111,21 @@ h3 {
   font-size: .8rem;
   background-color: #888;
 }
+
 .note-del {
   width: 100px;
   justify-content: end;
   margin: .5rem auto;
   font-size: .8rem;
 }
+
 .notes-area {
   max-width: 80%;
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
 }
+
 .note-box {
   width: 250px;
   height: 300px;
@@ -106,15 +134,18 @@ h3 {
   border-radius: .75rem;
   margin: 1rem;
 }
+
 .note-title {
   border-bottom: 1px solid beige;
   padding: .5rem;
 }
+
 .note-title h3 {
   max-width: 190px;
   max-height: 35px;
   overflow: hidden;
 }
+
 .note-body {
   text-indent: .5rem;
   overflow-wrap: break-word;
@@ -122,30 +153,25 @@ h3 {
   height: 11rem;
   overflow: hidden;
 }
+
 .note-body p {
   margin: 0;
 }
-.edit-title-icon {
+
+.edit-icon {
   background-color: white;
   width: 30px;
   height: 30px;
   cursor: pointer;
   right: 5%;
 }
-.edit-body-icon {
-  background-color: white;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  right: 5%;
-  bottom: 2%;
-}
+
 .delete-note-icon {
   background-color: white;
   width: 30px;
   height: 30px;
   cursor: pointer;
-  right: 20%;
+  right: 5%;
   bottom: 2%;
 }
 
